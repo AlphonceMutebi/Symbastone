@@ -371,8 +371,14 @@ h6 {
   #hero h2 {
     font-size: 28px;
   }
-  .logo img{
+  /* .logo img{
     justify-content: center!important;
+  } */
+  .carousel-container p{
+    padding-left: 70px;
+  }
+  .language{
+    display: none;
   }
 }
 
