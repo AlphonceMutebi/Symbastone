@@ -48,6 +48,18 @@ h6 {
   height:110px!important;
 
 }
+.center {
+  display: block!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  width: 50%!important;
+}
+.center-text {
+  display: block!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  width: 80%!important;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
