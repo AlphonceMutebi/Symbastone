@@ -375,8 +375,8 @@ h6 {
     justify-content: center!important;
   } */
   .carousel-container p{
-    /* padding-left: 70px; */
-    margin: auto;
+    padding-left: 70px;
+    
   }
   .language{
     display: none;
