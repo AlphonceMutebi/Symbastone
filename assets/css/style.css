@@ -358,7 +358,7 @@ h6 {
   /* position: relative; */
   padding: 40px 0;
   /* width:100%!important; */
-  height: 60vh;
+  height: 70vh;
   /* padding-top: 100px; */
 }
 
@@ -389,7 +389,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero .carousel-container {
-    height: 60vh;
+    height: 70vh;
   }
   #hero h2 {
     font-size: 28px;
