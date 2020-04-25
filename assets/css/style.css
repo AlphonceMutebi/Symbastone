@@ -34,7 +34,22 @@ h6 {
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
+.pic-frame{
+  width: 100%;
+  max-width: fit-content;
+  padding: 30px 10px 0 60px;
+}
+.mosaic{
+  display:grid;
 
+}
+.mosaic__item:first-of-type{
+  grid-column: 2 / span 2;
+
+}
+.mosaic__item:last-of-type{
+  grid-column: 1 / span 2;
+}
 .spacer{
   padding: 0 20px 0 20px;
 }
