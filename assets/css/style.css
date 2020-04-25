@@ -27,6 +27,14 @@ h6 {
   color: #3c3c3c;
   font-size: 1rem;
 }
+.dropdown-item:hover{
+  background-color: #e75b00;
+  color: #ffffff;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 .spacer{
   padding: 0 20px 0 20px;
 }
