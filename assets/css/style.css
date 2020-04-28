@@ -23,66 +23,94 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-.language{
+.language {
   color: #3c3c3c;
   font-size: 1rem;
 }
-.dropdown-item:hover{
+/* text over image */
+.image { 
+  position: relative; 
+  width: 100%; /* for IE 6 */
+}
+
+h3 { 
+  position: absolute; 
+  top: 500px; 
+  left: 0; 
+  width: 100%; 
+}
+h3 span { 
+  color: #ffffff; 
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  /* background: rgb(0, 0, 0); fallback color */
+  /* background: rgba(0, 0, 0, 0.7); */
+  /* background: linear-gradient(0deg, #dfdfdf 0%, #dfdfdf 100%); */
+  background-color: #e75b00;
+
+  padding: 25px; 
+}
+
+.landing-content {
+  font-size: 38px;
+  padding: 0 0 0 2rem;
+}
+.dropdown-item:hover {
   background-color: #e75b00;
   color: #ffffff;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
 }
-.pic-frame{
+.pic-frame {
   width: 100%;
   max-width: fit-content;
   padding: 30px 10px 0 60px;
 }
-.mosaic{
-  display:grid;
-
+.alignment-logo{
+  padding: 2rem 0 0.175rem 2rem;
 }
-.mosaic__item:first-of-type{
+/* .mosaic {
+  display: grid;
+}
+.mosaic__item:first-of-type {
   grid-column: 2 / span 2;
-
 }
-.mosaic__item:last-of-type{
+.mosaic__item:last-of-type {
   grid-column: 1 / span 2;
-}
-.spacer{
+} */
+.spacer {
   padding: 0 20px 0 20px;
 }
-.spacer:hover{
+.spacer:hover {
   color: #e75b00;
 }
-.activatedTab{
+.activatedTab {
   background-color: #e75b00;
 }
-.active{
+.active {
   border-radius: 20px;
 }
-.nav-item{
+.nav-item {
   padding-right: 20px;
-  padding-left:  20px;
+  padding-left: 20px;
 }
-.navbar-brand img{
-  width: 140px!important;
-  height:110px!important;
-
+.navbar-brand img {
+  width: 140px !important;
+  height: 110px !important;
 }
 .center {
-  display: block!important;
-  margin-left: auto!important;
-  margin-right: auto!important;
-  width: 50%!important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50% !important;
 }
 .center-text {
-  display: block!important;
-  margin-left: auto!important;
-  margin-right: auto!important;
-  width: 80%!important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 80% !important;
 }
 
 /*--------------------------------------------------------------
@@ -123,7 +151,8 @@ h6 {
   }
 }
 /* Desktop Navigation */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -147,7 +176,9 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
   background: #ef6603;
   text-decoration: none;
 }
@@ -187,7 +218,9 @@ h6 {
   color: #2a2c39;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
   color: #ef6603;
   background: none;
 }
@@ -283,7 +316,9 @@ h6 {
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
   color: #ef6603;
   text-decoration: none;
 }
@@ -347,6 +382,7 @@ h6 {
   overflow: hidden;
   position: relative;
   background: linear-gradient(0deg, #dfdfdf 0%, #dfdfdf 100%);
+  /* background-image: url('assets/img/benteEdit.jpeg'); */
   padding: 0;
 }
 
@@ -363,8 +399,6 @@ h6 {
   /* padding-top: 100px; */
 }
 
-
-
 #hero p {
   width: 100%;
   -webkit-animation-delay: 0.4s;
@@ -377,15 +411,11 @@ h6 {
   color: #e75b00;
 }
 
-
-
 @media (min-width: 1024px) {
   #hero p {
     width: 100%;
-    padding:0px 0 0 70px;
+    padding: 0px 0 0 70px;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -398,11 +428,10 @@ h6 {
   /* .logo img{
     justify-content: center!important;
   } */
-  .carousel-container p{
+  .carousel-container p {
     padding-left: 70px;
-    
   }
-  .language{
+  .language {
     display: none;
   }
 }
@@ -1581,7 +1610,7 @@ section .section-title {
   color: #3c3c3c;
 }
 #footer ul.quick-links li a:hover {
-  color: #e75b00;;
+  color: #e75b00;
 }
 #footer ul.social li a:hover {
   color: #e75b00;
@@ -1614,4 +1643,3 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
-
