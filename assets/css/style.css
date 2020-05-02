@@ -119,10 +119,10 @@ h3 span {
   
   h3 span { 
     color: #ffffff; 
-    font: bold 18px/40px Helvetica, Sans-Serif; 
+    font: bold 16px/38px Helvetica, Sans-Serif; 
     letter-spacing: -1px;  
     background-color: #e75b00;
-    padding: 25px; 
+    padding: 10px; 
   }
   
 }
