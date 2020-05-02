@@ -39,15 +39,12 @@ h3 {
   left: 0; 
   width: 100%; 
 }
+
 h3 span { 
   color: #ffffff; 
   font: bold 24px/45px Helvetica, Sans-Serif; 
   letter-spacing: -1px;  
-  /* background: rgb(0, 0, 0); fallback color */
-  /* background: rgba(0, 0, 0, 0.7); */
-  /* background: linear-gradient(0deg, #dfdfdf 0%, #dfdfdf 100%); */
   background-color: #e75b00;
-
   padding: 25px; 
 }
 
@@ -69,18 +66,10 @@ h3 span {
   padding: 30px 10px 0 60px;
 }
 .alignment-logo{
-  padding: 2rem 0 0.175rem 2rem;
+  padding: 2rem 0 0.175rem 1rem;
   
 }
-/* .mosaic {
-  display: grid;
-}
-.mosaic__item:first-of-type {
-  grid-column: 2 / span 2;
-}
-.mosaic__item:last-of-type {
-  grid-column: 1 / span 2;
-} */
+
 .spacer {
   padding: 0 20px 0 20px;
 }
@@ -113,6 +102,50 @@ h3 span {
   margin-right: auto !important;
   width: 80% !important;
 }
+/* ========================================== */
+/* Responsive design  */
+/* ========================================== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar-toggler{
+    display: block;
+  }
+  h3 { 
+    position: absolute; 
+    top: 250px; 
+    left: 0; 
+    width: 100%; 
+  }
+  
+  h3 span { 
+    color: #ffffff; 
+    font: bold 18px/40px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background-color: #e75b00;
+    padding: 25px; 
+  }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar-toggler{
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar-toggler{
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
 
 /*--------------------------------------------------------------
 # Back to top button
