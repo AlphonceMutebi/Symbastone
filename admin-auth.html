@@ -39,13 +39,39 @@
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-  <div class="checkbox mb-3">
+  <!-- <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Remember me
     </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </div> -->
+  <button class="btn btn-lg btn-primary btn-block" style="background-color: #e75b00; color: #ffffff;" type="submit"><a href="file-upload.php">Sign in</a></button>
   <p class="mt-5 mb-3 text-muted">&copy; <script>document.write(new Date().getFullYear());</script></p>
 </form>
+
+<!-- firebase signIn -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAN0JQ89I1h38dXZedsjxqpPEgHt-ow00g",
+    authDomain: "symbastone-72836.firebaseapp.com",
+    databaseURL: "https://symbastone-72836.firebaseio.com",
+    projectId: "symbastone-72836",
+    storageBucket: "symbastone-72836.appspot.com",
+    messagingSenderId: "102783760475",
+    appId: "1:102783760475:web:aa918c2f5ee3a64d1f277e",
+    measurementId: "G-02LL3X1EBT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>
 </html>

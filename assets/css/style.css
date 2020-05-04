@@ -30,24 +30,28 @@ h6 {
   font-size: 1rem;
 }
 /* text over image */
-.image { 
-  position: relative; 
+.image {
+  position: relative;
   width: 100%; /* for IE 6 */
 }
 
-h3 { 
-  position: absolute; 
-  top: 500px; 
-  left: 0; 
-  width: 100%; 
+h3 {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  width: 100%;
+}
+.btn-styler{
+  color: #ffffff !important;
+  background-color: #e75b00 !important;
 }
 
-h3 span { 
-  color: #ffffff; 
-  font: bold 24px/45px Helvetica, Sans-Serif; 
-  letter-spacing: -1px;  
+h3 span {
+  color: #ffffff;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
   background-color: #e75b00;
-  padding: 25px; 
+  padding: 25px;
 }
 
 .landing-content {
@@ -67,9 +71,8 @@ h3 span {
   max-width: fit-content;
   padding: 30px 10px 0 60px;
 }
-.alignment-logo{
+.alignment-logo {
   padding: 2rem 0 0.175rem 1rem;
-  
 }
 
 .spacer {
@@ -109,24 +112,23 @@ h3 span {
 /* ========================================== */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .navbar-toggler{
+  .navbar-toggler {
     display: block;
   }
-  h3 { 
-    position: absolute; 
-    top: 250px; 
-    left: 0; 
-    width: 100%; 
+  h3 {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
   }
-  
-  h3 span { 
-    color: #ffffff; 
-    font: bold 16px/38px Helvetica, Sans-Serif; 
-    letter-spacing: -1px;  
+
+  h3 span {
+    color: #ffffff;
+    font: bold 16px/38px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
     background-color: #e75b00;
-    padding: 10px; 
+    padding: 10px;
   }
-  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -134,14 +136,14 @@ h3 span {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .navbar-toggler{
+  .navbar-toggler {
     display: none;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .navbar-toggler{
+  .navbar-toggler {
     display: none;
   }
 }

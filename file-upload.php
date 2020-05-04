@@ -66,7 +66,7 @@
   <div class="row p-5">
       <div class="container">
         <div class="col-md-12">
-            <button class="btn btn-primary"data-toggle="modal" data-target="#exampleModalCenter">Upload File</button>
+            <button class="btn btn-warning btn-lg " style="color:#ffffff; background-color:#eb7500;" data-toggle="modal" data-target="#exampleModalCenter">Upload File</button>
             <!-- Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -101,30 +101,31 @@
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">File Name</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Sample</td>
+            <td>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+          
         </tr>
-        <tr>
+        <!-- <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-            <td>@fat</td>
+           
         </tr>
         <tr>
             <th scope="row">3</th>
             <td>Larry</td>
             <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
+            
+        </tr> -->
         </tbody>
     </table>
 </div>
