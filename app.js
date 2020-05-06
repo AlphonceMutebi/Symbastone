@@ -32,4 +32,8 @@ var firebaseConfig = {
       promise.catch(e => console.log(e.message));
 
   });
+
+  firbase.auth().onAuthStateChanged(firbaseUser => {
+      
+  })
 })
