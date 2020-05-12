@@ -43,10 +43,68 @@
      </button>
 
      <canvas id="pdf-render"></canvas> -->
-     <embed src="assets/docs/sample.pdf" width="1400px" height="2100px" />
+    <!-- <embed src="assets/docs/sample.pdf" width="1400px" height="2100px" /> -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/symbastoneIcon.svg" class="animated fadeInUp ml-5" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link text-center" href="company.html">Company </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-center" href="holding.html" >Holding </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-center" href="#">Data Room</a>
+              </li>
+            <li class="nav-item ">
+              <a class="nav-link text-center" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 
-  </div>
+ <!-- View Files -->
+ <div class="container">
+             <?php
+                echo "<table class='table'>";
+                echo "<thead class='thead-dark'>
+                <tr>
+                    <th scope='col'>#</th>
+                    <th scope='col'>File Name</th>
+                    <th scope='col'>Action</th>
+                </tr>
+                </thead>";
+                echo "<tbody>";
+             
+                    if ($handle = opendir('uploads/')) {
+                      while (false !== ($entry = readdir($handle))) {
+                        $count = 0;
+                          if ($entry != "." && $entry != "..") {
+                                echo "<tr>
+                                      <td></td>
+                                      <td>$entry</td>
+                                      <td>
+                                      <button type='button' class='btn btn-success'><a href ='ViewerJS/#../uploads/$entry'>View</a></button>
+                                      </td>
+                                      </tr>";
+                          }
+                        }
+                  closedir($handle);
+                }
+              echo "</table>";
+
+          ?>
+</div>
   
 
   

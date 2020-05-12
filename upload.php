@@ -14,7 +14,19 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
         //upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             $statusMsg = "The file ".$fileName. " has been uploaded.";
-            header("Location: file-upload.php?uploadsuccess");
+            if ($handle = opendir('uploads/')) {
+
+                while (false !== ($entry = readdir($handle))) {
+            
+                    if ($entry != "." && $entry != "..") {
+            
+                        echo "$entry\n";
+                    }
+                }
+            
+                closedir($handle);
+            }
+             header("Location: file-upload.php?uploadsuccess");
         }else{
             $statusMsg = "Sorry, there was an error uploading your file.";
         }

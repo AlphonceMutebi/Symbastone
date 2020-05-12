@@ -30,13 +30,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-        <!-- firebase signIn -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+  
   
 
 
@@ -44,7 +38,7 @@
 
   <body class="text-center admin-section">
 
-    <form class="form-signin">
+    <form class="form-signin" autocomplete="off">
       <img class="mb-4" src="assets/img/symbastoneIcon.svg" alt="" width="100" height="100">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
@@ -52,12 +46,36 @@
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="password" class="form-control" placeholder="Password" >
 
-      <button class="btn btn-lg btn-primary btn-block" style="background-color: #e75b00; color: #ffffff;" type="submit" id="signin">Sign in</button>
+      <button class="btn btn-lg btn-primary btn-block" style="background-color: #e75b00; color: #ffffff;" type="submit" onclick="login()">Sign in</button>
     </form>
 
 
 
-    <script src="app.js"></script>
+
+          <!-- firebase signIn -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAN0JQ89I1h38dXZedsjxqpPEgHt-ow00g",
+            authDomain: "symbastone-72836.firebaseapp.com",
+            databaseURL: "https://symbastone-72836.firebaseio.com",
+            projectId: "symbastone-72836",
+            storageBucket: "symbastone-72836.appspot.com",
+            messagingSenderId: "102783760475",
+            appId: "1:102783760475:web:aa918c2f5ee3a64d1f277e",
+            measurementId: "G-02LL3X1EBT"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+    </script>
+    <script src="index.js"></script>
 
 </body>
 </html>

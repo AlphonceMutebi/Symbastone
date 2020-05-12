@@ -97,38 +97,43 @@
 
   <!-- View Files -->
   <div class="container">
-    <table class="table">
-        <thead class="thead-dark">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">File Name</th>
-            <th scope="col">Action</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Sample</td>
-            <td>
-              <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-          
-        </tr>
-        <!-- <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-           
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            
-        </tr> -->
-        </tbody>
-    </table>
-</div>
+             <?php
+                echo "<table class='table'>";
+                echo "<thead class='thead-dark'>
+                <tr>
+                    <th scope='col'>#</th>
+                    <th scope='col'>File Name</th>
+                    <th scope='col'>Action</th>
+                </tr>
+                </thead>";
+                echo "<tbody>";
+             
+                    if ($handle = opendir('uploads/')) {
+                      while (false !== ($entry = readdir($handle))) {
+                        $count = 0;
+                          if ($entry != "." && $entry != "..") {
+                                echo "<tr>
+                                      <td></td>
+                                      <td>$entry</td>
+                                      <td>
+                                      <button type='button' class='btn btn-success'><a href ='ViewerJS/#../uploads/$entry'>View</a></button>
+                                      <form action ='deletefile.php' method='POST'>
+                                      <button type='submit' name='submit' class='btn btn-danger'>Delete</button>
+                                      </form>
+                                      </td>
+                                      </tr>";
+                          }
+                        }
+                  closedir($handle);
+                }
+              echo "</table>";
+
+          ?>
+    </div>
+
+
+
+        
   
  
 
